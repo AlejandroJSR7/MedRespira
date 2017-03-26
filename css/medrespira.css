@@ -1,0 +1,90 @@
+/**
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+**/
+
+body, html {height: 100%;}
+body {
+  color: #2c3e50;
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+h1, h2 {
+  text-align: center;
+}
+header {
+  background-color: #3498db;
+  height: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 0px 5px rgba(0, 20, 60, .4);
+}
+.vh100{
+  height: 100vh;
+}
+.vh100 {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -30px; 
+}
+.vh100:after {
+  content: "";
+  display: block;
+}
+footer, .vh100:after {
+  height: 30px; 
+}
+footer {
+  padding-top: 5px;
+  background: #eb503b;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.store-icons {margin-top: 50px; padding-top: 20px;}
+.store-icons ul {text-align: center; padding: 0;}
+.store-icons ul li {display: inline-block; margin: 0 5px 10px;}
+
+.store-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  display: block;
+  height: 40px;
+  padding: 15px 15px;
+  width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .store-icon {
+    height: 100px;
+    width: 180px;
+  }
+}
+.store-icon--ios {
+  background-image: url('../images/misc/apple.png');
+}
+.store-icon--android {
+  background-image: url('../images/misc/google.png');
+}
+
+
+/* Fondo Imagen */
+body {
+  background-image: url('../images/bg/2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  opacity: 0;
+}

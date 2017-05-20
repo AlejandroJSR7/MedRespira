@@ -7,7 +7,8 @@
   <script>
   </script>
   <link rel="stylesheet" href="css/libs/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share-kit/1.0.13/css/social-share-kit.css">
   <link rel="stylesheet" href="css/medrespira.css">
   <script>
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -21,30 +22,40 @@
   </script>
 </head>
 <body>
-  <div class="vh100">
-    <header></header>
-    <div class="container">
-      <div class="content">
-        <h1>MEDELLÍN RESPIRA</h1>
-        <h2>Descarga Nuestra app y reporta vehículos que esten contaminando.</h2>
-        <div class="store-icons">
-          <ul>
-            <li><a class="store-icon store-icon--ios" href="http://www.apple.com" title="Download from AppStore"></a></li>
-            <li><a class="store-icon store-icon--android" href="http://www.google.com" title="Download from PlayStore"></a></li>
-          </ul>
+  <div class="vh_100">
+    <header>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              We are
+              <a href="http://www.barista-v.com/" target="_blank"> Barista Ventures</a>.
+            </div>
+            <div class="hashtag">#MedellínRespira</div>
+          </div>
         </div>
+      </nav>
+    </header>
+    <div class="main text-center">
+      <h1 class="main__title">Medellín Respira</h1>
+      <p class="main__description">
+        Amamos nuestra ciudad, y ahora todos podremos reportar vehículos y casos de contaminación.
+      </p>
+      <div class="buttons-download">
+        <button class="btn btn--ios">
+          <span class="ssk ssk-icon ssk-apple"></span>
+          Download the app
+        </button>
+        <button class="btn btn--android">
+          <span class="ssk ssk-icon ssk-android"></span>
+          Download the app
+        </button>
       </div>
+      <div class="main__phone"><div class="main__phone__finger"></div></div>
     </div>
   </div>
-  <footer>
-    <div class="container">
-      <div class="text-right">
-        <p>By: <a href="http://barista-v.com/" target="_blank">Barista Ventures</a></p>
-      </div>
-    </div>
-  </footer>
   <script src="js/libs/jquery.min.js"></script>
-  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/jquery.backstretch.min.js"></script>
   <script src="js/medrespira.js"></script>
 </body>
 </html>

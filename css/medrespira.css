@@ -1,90 +1,124 @@
 /**
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif; //300,400,600,700,800
 **/
 
-body, html {height: 100%;}
 body {
-  color: #2c3e50;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
 }
-h1 {
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  text-transform: uppercase;
+  line-height: 1em;
 }
-h1, h2 {
-  text-align: center;
+.vh_100 {
+  background-color: rgba(21,32,78, 0.75);
+  height: 100vh;
+  overflow: hidden
 }
 header {
-  background-color: #3498db;
-  height: 25px;
-  margin-bottom: 50px;
-  box-shadow: 0 0px 5px rgba(0, 20, 60, .4);
+  position: relative;
+  top: 20px;
 }
-.vh100{
-  height: 100vh;
+.navbar-header {
+  width: 100%;
 }
-.vh100 {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -30px; 
+.navbar-brand {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
-.vh100:after {
-  content: "";
-  display: block;
-}
-footer, .vh100:after {
-  height: 30px; 
-}
-footer {
-  padding-top: 5px;
-  background: #eb503b;
-}
-footer p {
-  margin: 0;
-  padding: 0;
-}
-footer a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.store-icons {margin-top: 50px; padding-top: 20px;}
-.store-icons ul {text-align: center; padding: 0;}
-.store-icons ul li {display: inline-block; margin: 0 5px 10px;}
-
-.store-icon {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: white;
-  display: block;
-  height: 40px;
-  padding: 15px 15px;
-  width: 120px;
-}
-@media screen and (min-width: 768px) {
-  .store-icon {
-    height: 100px;
-    width: 180px;
+@media screen and (min-width: 480px) {
+  .navbar-brand {
+    font-size: 25px;
   }
 }
-.store-icon--ios {
-  background-image: url('../images/misc/apple.png');
+.navbar-brand a {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
 }
-.store-icon--android {
-  background-image: url('../images/misc/google.png');
+.navbar-brand a:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
-
-
-/* Fondo Imagen */
-body {
-  background-image: url('../images/bg/2.png');
-  background-position: center center;
+.main {
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+@media screen and (min-width: 480px) {
+  .main {
+    margin-top: 100px;
+    width: 60%;
+  }
+}
+.main__title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .main__title {
+    font-size: 32px;
+  }
+}
+.main__description {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 300;
+}
+@media screen and (min-width: 480px) {
+  .main__description {
+    font-size: 18px;
+  }
+}
+.main__phone {
+  background-image: url(../images/design/misc/phone2.png);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  bottom: -50px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
 }
-header {
-  opacity: 0;
+.main__phone__finger {
+  background-image: url(../images/design/misc/finger.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -250px;
+  height: 500px;
+  left: 50%;
+  margin-left: -200px;
+  position: absolute;
+  width: 400px;
+}
+.btn {
+  margin-bottom: 10px;
+}
+.btn--ios {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+}
+.btn--android {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn--android:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.hashtag {
+  color: white;
+  float: right;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hashtag {
+    font-size: 24px;
+    margin-top: 10px;
+  }
 }

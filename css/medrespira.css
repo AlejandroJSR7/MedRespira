@@ -5,6 +5,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
+  overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -62,6 +63,16 @@ header {
     font-size: 32px;
   }
 }
+@media screen and (min-height: 770px) {
+  .main__title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-height: 890px) {
+  .main__title {
+    margin-bottom: 50px;
+  }
+}
 .main__description {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
@@ -70,6 +81,16 @@ header {
 @media screen and (min-width: 480px) {
   .main__description {
     font-size: 18px;
+  }
+}
+@media screen and (min-height: 770px) {
+  .main__description {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-height: 890px) {
+  .main__description {
+    margin-bottom: 60px;
   }
 }
 .main__phone {
@@ -83,6 +104,14 @@ header {
   position: relative;
   width: 300px;
 }
+@media screen and (min-height: 1080px) {
+  .main__phone {
+    left: calc(50% - 150px);
+    overflow: hidden;
+    position: absolute;
+  }
+}
+
 .main__phone__finger {
   background-image: url(../images/design/misc/finger.png);
   background-position: center;
